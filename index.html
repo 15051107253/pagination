@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mypage.css">
+</head>
+<body>
+    <div id="myPage"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="myPage1"></div>
+    <script src="./mypage.js"></script>
+    <script>
+
+        new myPage('#myPage',{
+            total: 2000,
+            changePage: function(pageNum) {
+                console.log('当前第' + pageNum + '页')
+            },
+            changePageSize: function(pageSize) {
+                console.log('当前每页显示' + pageSize + '条')
+            }
+        })
+
+
+        new myPage('#myPage1',{
+            total: 300,
+            count: 11,
+            inputJumpPage: false,
+            selectPageSize: false,
+            changePage: function(pageNum) {
+                console.log('当前第' + pageNum + '页')
+            },
+            changePageSize: function(pageSize) {
+                console.log('当前每页显示' + pageSize + '条')
+            }
+        })
+
+    </script>
+</body>
+</html>

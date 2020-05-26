@@ -1,0 +1,73 @@
+ul.pageWrap{
+    list-style: none;
+    box-sizing: border-box;
+}
+ul.pageWrap li{
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    font-family: Arial;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    outline: 0;
+    cursor: pointer;     
+    user-select: none; 
+}
+ul.pageWrap li:not(.prev-page):not(.next-page):not(.current-page):not(.page-to):not(.select-pagesize):hover {
+    color: rgb(24, 184, 233);
+}
+ul.pageWrap li.page-to,ul.pageWrap li.select-pagesize{
+    border: none;
+}
+ul.pageWrap li.page-to .page_input{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    line-height: 28px;
+    background-color: #fafafa;
+    border: 0;
+    border: 1px solid #f0f0f0;
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+ul.pageWrap li.page-to span{
+    vertical-align: middle;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    line-height: 28px;
+    background-color: #fafafa;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    margin-left: 10px
+}
+ul.pageWrap li.select-pagesize .select-size{
+    height: 30px;
+    width: 80px;
+}
+
+ul.pageWrap li.page-to span:hover{
+    background-color: rgb(24, 184, 233);
+    color: #fff
+}
+a{
+    display: block;
+    padding: 0 6px;
+}
+.ellipsis{
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+ul.pageWrap li.current-page{
+    color: #fff;
+    border: 1px solid rgb(24, 184, 233);
+    background: rgb(24, 184, 233);
+}
